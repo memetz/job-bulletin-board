@@ -5,8 +5,7 @@
       <h2>Job list</h2>
       <ul>
         <li *ngFor="let job of jobs">
-          <b>{{job.name}}</b> {{job.company}}
-        </li>
+          <b>{{job.name}}</b> Company: {{job.company}} Best candidate: {{job?.bestCandidate ?  job?.bestCandidate.name + ' ' + job?.bestCandidate.surname : 'No match'}}
       </ul>
     </div>
     <div class='col-sm-9'>

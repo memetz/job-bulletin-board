@@ -16,9 +16,11 @@ namespace JobBulletinBoard.BO
 
         static List<Job> _jobs = new List<Job>()
         {
-            new Job(){ Id = 1, Name = "FE SoftWare Developer", Company = "Canva", Skills = new List<string>() { "C#", "SQL", "HTML" } },
+            new Job(){ Id = 1, Name = "FE SoftWare Developer", Company = "Canva", Skills = new List<string>() { "C#", "SQL", "HTML", "Node" } },
             new Job(){ Id = 2, Name = "BE SoftWare Developer", Company = "Google", Skills = new List<string>() { "Java", "mySQL", "CSS" } },
-            new Job(){ Id = 3, Name = "Business Analyst", Company = "Microsoft", Skills = new List<string>() { "C++", "Oracle", "Cassandra" } },
+            new Job(){ Id = 3, Name = "FullStack SoftWare Developer", Company = "KPM", Skills = new List<string>() { "Java", "MongoDB", "AWS" } },
+            new Job(){ Id = 4, Name = "Business Analyst", Company = "Microsoft", Skills = new List<string>() { "C++", "Oracle", "Cassandra" } },
+            new Job(){ Id = 4, Name = "QA", Company = "Microsoft", Skills = new List<string>() { "Automated Testing", "Jasmine" } },
         };
 
         public List<Job> GetAllJobs()
@@ -35,7 +37,8 @@ namespace JobBulletinBoard.BO
             _jobs.Add(job);
         }
 
-        private Candidate FindBestCandidate(List<string> reqSkills)
+        //set to public just for testing purpose
+        public Candidate FindBestCandidate(List<string> reqSkills)
         {
             Candidate match = null;
 

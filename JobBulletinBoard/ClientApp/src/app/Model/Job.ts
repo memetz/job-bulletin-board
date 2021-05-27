@@ -5,5 +5,5 @@ export interface Job {
   name: string;
   company: string;
   skills: string[];
-  bestcandidate?: Candidate
+  bestCandidate?: Candidate
 }

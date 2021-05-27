@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1340
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobBulletinBoard", "JobBulletinBoard\JobBulletinBoard.csproj", "{AA3A33C5-9735-4BD2-ACD5-60F011E4FE57}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobBulletinBoard", "JobBulletinBoard\JobBulletinBoard.csproj", "{AA3A33C5-9735-4BD2-ACD5-60F011E4FE57}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{BE486C4A-CD6B-462D-91E8-591A53A01658}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobBulletinBoardTest", "JobBulletinBoardTest\JobBulletinBoardTest.csproj", "{C79E1B6E-691F-481C-ACE4-E43C456922EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +19,16 @@ Global
 		{AA3A33C5-9735-4BD2-ACD5-60F011E4FE57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA3A33C5-9735-4BD2-ACD5-60F011E4FE57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA3A33C5-9735-4BD2-ACD5-60F011E4FE57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C79E1B6E-691F-481C-ACE4-E43C456922EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C79E1B6E-691F-481C-ACE4-E43C456922EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C79E1B6E-691F-481C-ACE4-E43C456922EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C79E1B6E-691F-481C-ACE4-E43C456922EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C79E1B6E-691F-481C-ACE4-E43C456922EF} = {BE486C4A-CD6B-462D-91E8-591A53A01658}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F3036E4B-3C10-4E1D-A661-FA7620D65EB5}
