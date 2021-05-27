@@ -19,14 +19,7 @@ namespace JobBulletinBoard.Controllers
         {
             _candidateBO = candidateBO;
         }
-
-        //static List<Candidate> _candidates = new List<Candidate>()
-        //{
-        //    new Candidate(){ Id = 1, Name = "John", Surname = "Smith", Title = "FE SoftWare Developer", Skills = new List<string>() { "C#", "SQL", "HTML" } },
-        //    new Candidate(){ Id = 2, Name = "Carl", Surname = "Green", Title = "BE SoftWare Developer", Skills = new List<string>() { "Java", "mySQL", "CSS" } },
-        //    new Candidate(){ Id = 3, Name = "Mike", Surname = "King", Title = "Business Analyst", Skills = new List<string>() { "C++", "Oracle", "Cassandra" } },
-        //};
-
+        
         [HttpGet]
         public IEnumerable<Candidate> GetCandidates()
         {
