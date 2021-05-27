@@ -1,0 +1,41 @@
+
+
+<div class='container-fluid'>
+  <div class='row'>
+    <div class='col-sm-3'>
+      <h2>Candidates list</h2>
+      <ul>
+        <li *ngFor="let cand of candidates">
+          <b>{{cand.name}} {{cand.surname}}</b> ({{cand.title}})
+        </li>
+      </ul>
+    </div>
+    <div class='col-sm-9'>
+      <div class='container-fluid card' ngForm>
+        <h2>Add a candidate</h2>
+        <div class='row'>
+          <div class='col-sm-3'>
+            <label for="name">Name:</label>
+            <input type="text" name="name" [(ngModel)]="newCandidate.name" required />
+          </div>
+          <div class='col-sm-3'>
+            <label for="surname">Surname:</label>
+            <input type="text" name="surname" [(ngModel)]="newCandidate.surname" />
+          </div>
+          <div class='col-sm-3'>
+            <label for="title">Title:</label>
+            <input type="text" name="title" [(ngModel)]="newCandidate.title" />
+          </div>
+          <div class='col-sm-3'>
+            <button type="button" (click)="addCandidate()" label="Add candidate">Add candidate</button>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-sm-6'>
+            <app-add-skill [(skills)]="newCandidate.skills"></app-add-skill>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="card">
+  <div>
+    <label for="newSkill">Skill:</label>
+    <input type="text" name="newSkill" [(ngModel)]="newSkill" />&nbsp;<button type="button" (click)="add()" label="Add">Add</button>
+  </div>
+  <h3>Skills</h3>
+  <ul>
+    <li *ngFor="let skill of skills">
+      <b>{{skill}}</b> <a (click)="remove(skill)">x</a>
+    </li>
+  </ul>
+</div>
