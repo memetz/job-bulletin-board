@@ -9,7 +9,9 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
 import { CandidateComponent } from './candidate/candidate.component';
 import { CandidateService } from './services/candidate.service';
+import { JobService } from './services/job.service';
 import { AddSkillComponent } from './add-skill/add-skill.component';
+import { JobComponent } from './job/job.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,8 @@ import { AddSkillComponent } from './add-skill/add-skill.component';
     NavMenuComponent,
     HomeComponent,
     CandidateComponent,
-    AddSkillComponent
+    AddSkillComponent,
+    JobComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -26,9 +29,10 @@ import { AddSkillComponent } from './add-skill/add-skill.component';
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'candidate', component: CandidateComponent },
+      { path: 'job', component: JobComponent },
     ])
   ],
-  providers: [CandidateService],
+  providers: [CandidateService, JobService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

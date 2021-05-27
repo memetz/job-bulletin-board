@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { CandidateService } from '../services/candidate.service';
 import { Candidate } from '../Model/Candidate';
 import { switchMap } from 'rxjs/operators';
